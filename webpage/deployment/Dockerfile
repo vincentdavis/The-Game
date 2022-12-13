@@ -40,7 +40,6 @@ USER jenkins
 #
 # COPY .env /home/jenkins/
 
-ENV DJANGO_SETTINGS_MODULE="config.settings.local"
 
 COPY nginx.conf /home/jenkins/
 
