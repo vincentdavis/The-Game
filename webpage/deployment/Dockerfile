@@ -32,7 +32,7 @@ EXPOSE 8010
 USER jenkins
 
 #Copying deploy script to the container
-ADD requirements /home/jenkins/
+# ADD requirements /home/jenkins/
 
 # COPY .git-credentials /root/
 #
