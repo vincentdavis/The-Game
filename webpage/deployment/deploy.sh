@@ -5,7 +5,7 @@ mkdir -p media
 
 #sudo cp -rf ../nginx.conf  /etc/nginx/nginx.conf
 #sudo cp -rf ../default.conf  /etc/nginx/sites-available/default
-#cp ../.env /home/jenkins/the_game/
+cp ../media /home/jenkins/the_game/webpage/
 pip install uwsgi
 
 # Restart nginx
