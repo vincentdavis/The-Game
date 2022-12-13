@@ -1,7 +1,6 @@
 #!/bin/bash
 git clone https://github.com/we-race-here/The-Game.git /home/jenkins/the_game
 cd /home/jenkins/the_game/webpage/
-git checkout master
 mkdir -p media
 
 sudo cp -rf ../nginx.conf  /etc/nginx/nginx.conf
