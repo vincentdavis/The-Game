@@ -9,7 +9,7 @@ mkdir -p media
 pip install uwsgi
 
 # Restart nginx
-sudo /etc/init.d/nginx start || sudo /etc/init.d/nginx start
+#sudo /etc/init.d/nginx start || sudo /etc/init.d/nginx start
 
 # Running Celery
 #celery -A zp_result worker -l info &
