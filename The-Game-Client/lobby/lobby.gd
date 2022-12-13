@@ -10,7 +10,6 @@ func _ready():
 	player_name.text = Save.save_data["Player_name"]
 	selected_IP.text = Server.DEFAULT_IP
 	selected_port.text = str(Server.DEFAULT_PORT)
-	
 
 func _on_JoinBtn_pressed():
 	Server.selected_IP = selected_IP.text
@@ -23,10 +22,10 @@ func _on_NameTextBox_text_changed(new_text):
 	Save.save_data["Player_name"] = player_name.text
 	Save.save_game()
 	
-	
 func show_waiting_room():
 	waiting_room.popup_centered()
 
 
 func _on_ReadyBtn_pressed():
+	Server.load_game()
 	ready_btn.disabled = true
