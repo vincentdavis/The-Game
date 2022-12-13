@@ -5,11 +5,11 @@ mkdir -p media
 
 #sudo cp -rf ../nginx.conf  /etc/nginx/nginx.conf
 #sudo cp -rf ../default.conf  /etc/nginx/sites-available/default
-cp ../media /home/jenkins/the_game/webpage/
+cp ../media -rf  /home/jenkins/the_game/webpage
 pip install uwsgi
 
 # Restart nginx
-#sudo /etc/init.d/nginx start || sudo /etc/init.d/nginx start
+#sudo /etc/init.d/nginx start || sudo /etc/ init.d/nginx start
 
 # Running Celery
 #celery -A zp_result worker -l info &

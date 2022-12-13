@@ -32,7 +32,7 @@ EXPOSE 8011
 USER jenkins
 
 #Copying deploy script to the container
-ADD media /home/jenkins/
+COPY media /home/jenkins/
 
 # COPY .git-credentials /root/
 #
