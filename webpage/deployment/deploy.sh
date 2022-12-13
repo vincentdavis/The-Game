@@ -3,9 +3,9 @@ git clone https://github.com/we-race-here/The-Game.git /home/jenkins/the_game
 cd /home/jenkins/the_game/webpage/
 mkdir -p media
 
-sudo cp -rf ../nginx.conf  /etc/nginx/nginx.conf
-sudo cp -rf ../default.conf  /etc/nginx/sites-available/default
-cp ../.env /home/jenkins/the_game/
+#sudo cp -rf ../nginx.conf  /etc/nginx/nginx.conf
+#sudo cp -rf ../default.conf  /etc/nginx/sites-available/default
+#cp ../.env /home/jenkins/the_game/
 pip install uwsgi
 
 # Restart nginx
